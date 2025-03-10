@@ -9,7 +9,7 @@ const WalletConnectButton = () => {
     <button
       disabled={isPending}
       onClick={() => connect({ connector: metaMask() })}
-      className="flex items-center text-xs lg:text-sm font-medium text-accent space-x-2 border border-athens rounded-lg px-4 py-[0.625rem]"
+      className="flex items-center text-xs lg:text-sm w-full font-medium text-white bg-accent space-x-2 border border-athens rounded-lg px-4 py-[0.625rem]"
     >
       <VscDebugDisconnect size={18} />
       <span>Connect</span>

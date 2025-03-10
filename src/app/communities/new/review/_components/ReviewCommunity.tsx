@@ -26,7 +26,6 @@ const CreateCommunity = () => {
   const { data } = useCreateCommunityStore();
   const { user } = useUser();
   const [communityId, setCommunityId] = useState("");
-  const [hash, setHash] = useState("");
   const router = useRouter();
 
   const uploadBanner = async () => {
@@ -85,7 +84,7 @@ const CreateCommunity = () => {
         creator: user?._id,
       });
 
-      if (response?.message || !response?._id) {
+      if (!response?._id) {
         toast.error(response?.message || "Failed to create community", {
           className: "error-message",
         });
@@ -95,7 +94,6 @@ const CreateCommunity = () => {
 
       const id = response?._id;
       setCommunityId(id);
-
       setCreatingCommunityState(false);
     } catch (error) {
       toast.error(
@@ -133,7 +131,7 @@ const CreateCommunity = () => {
           </h4>
           {createdCommunity ? null : (
             <p className="text-xs lg:text-sm mt-1 text-mako">
-              Creating Cellena Finance Community
+              Creating Community
             </p>
           )}
         </div>

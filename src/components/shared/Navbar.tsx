@@ -62,7 +62,13 @@ const Navbar = () => {
               <NotificationIcon />
             </span>
           </span> */}
-          {isConnected ? <AccountMenu /> : <WalletConnectButton />}
+          {isConnected ? (
+            <AccountMenu />
+          ) : (
+            <span className="w-auto block">
+              <WalletConnectButton />
+            </span>
+          )}
         </div>
 
         <Sheet>

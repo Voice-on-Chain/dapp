@@ -7,10 +7,9 @@ function WagmiWrapper({ children }: { children: React.ReactNode }) {
   return (
     <WagmiProvider config={config}>
       <ProgressBar
-        height="4px"
+        height="6px"
         color="#00B2A1"
         options={{ showSpinner: false }}
-        shallowRouting
       />
       {children}
     </WagmiProvider>
