@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import UserFetcher from "@/components/UserFetcher";
 import WagmiWrapper from "@/providers/wagmi";
 import type { Metadata } from "next";
-import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+
 import localFont from "next/font/local";
 import ReactQuery from "../providers/react-query";
 import "./globals.css"; // In app directory
@@ -79,12 +79,7 @@ export default function RootLayout({
         <WagmiWrapper>
           <ReactQuery>
             <Toaster />
-            <ProgressBar
-              height="4px"
-              color="#00B2A1"
-              options={{ showSpinner: false }}
-              shallowRouting
-            />
+
             <Navbar />
             <div className="flex items-start bg-white">
               <Sidebar />

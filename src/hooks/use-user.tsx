@@ -12,11 +12,11 @@ const fetcher = (url: string, address: string) =>
 
 const useUser = () => {
   const { address } = useAccount();
-
   const { data, isError, error, isLoading } = useQuery({
     queryKey: [`user`, address],
     queryFn: () => fetcher("/user", address!),
     enabled: !!address,
+    retry: false,
   });
 
   return {
