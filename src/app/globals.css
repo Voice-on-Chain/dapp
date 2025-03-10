@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    appearance: none;
+    width: 0;
+    height: 0;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-track {
+    width: 0;
+    height: 0;
+  }
+
+  .error-message {
+    @apply !text-scarlet !bg-red-100;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  *,
+  *::after,
+  *::before {
+    @apply transition-all duration-75;
+  }
+
+  html {
+    @apply text-mako;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.wallet-button {
+  @apply !bg-accent hover:!text-white !w-full hover:!bg-teal !rounded-lg !px-4 !py-[0.625rem] !font-medium !text-sm;
+}
