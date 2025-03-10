@@ -30,7 +30,7 @@ async function page({
         <div className="mb-18 flex items-start lg:items-center space-x-3 border border-sun-glow bg-serenade rounded-lg py-4 px-5 text-xs lg:text-sm text-gamboge">
           <BiSolidInfoCircle size={24} />
           <p>
-            All communities currently listed, are for testnet purposes and
+            All communities currently listed, are for testing purposes and
             doesn’t have association with the protocol team
           </p>
         </div>
