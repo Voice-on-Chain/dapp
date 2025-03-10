@@ -14,7 +14,7 @@ const RAvatar = ({
         src={src ?? "https://avatar.iran.liara.run/public"}
         className="object-cover object-center"
       />
-      <AvatarFallback className="text-s10">VoA</AvatarFallback>
+      <AvatarFallback className="text-s10">VOC</AvatarFallback>
     </Avatar>
   );
 };
