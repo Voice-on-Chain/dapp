@@ -2,6 +2,6 @@
 
 Voice on Chain (VOC) is a community-driven platform where projects and protocols on chain can create and manage decentralized communities.
 
-🌐 Website <https://voice-on-chain.vercel.app/>
+🌐 Website <https://voice-on-chain.vercel.app>
 
-<!-- 🌐 Browse Communities <https://dao.voc.community>| -->
+🌐 Browse Communities <https://doa-voc.vercel.app>
